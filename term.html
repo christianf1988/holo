@@ -1,4 +1,20 @@
-
-<input type="button" value="Close this window" onclick="self.close()">
-
-
+<html>
+<body>
+<script>
+function TimeoutCloseWindow2()
+{
+window.setTimeout("window.close()", 1);
+}
+function DirectCloseWindow()
+{
+window.close();
+}
+</script>
+<p>
+<a href="javascript:TimeoutCloseWindow2();">Workaround 1: Click here to try to close the window by using window.setTimeout("window.close()", 1)</a>
+</p>
+<p>
+<a href="javascript:DirectCloseWindow();">Workaround 2: Click here to try to close the window by using window.close()</a>
+</p>
+</body>
+</html>
